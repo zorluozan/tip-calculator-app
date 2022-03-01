@@ -1,0 +1,92 @@
+.main {
+  @include flexColumn;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-width: $bp-mobile) {
+    @include flexColumn;
+    padding: 8rem 8rem;
+  }
+
+  @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+    padding: 8rem 4rem;
+  }
+
+  &__logo {
+    margin: 2rem 0;
+    opacity: 0.8;
+
+    @media only screen and (min-width: $bp-mobile) {
+      margin: 4rem 0;
+    }
+  }
+
+  &__content {
+    background-color: $color-white;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 1rem;
+
+    @media only screen and (min-width: $bp-mobile) {
+      @include flexRow;
+      width: 90%;
+    }
+
+    &--form {
+      @media only screen and (min-width: $bp-mobile) {
+        margin-right: 4rem;
+      }
+    }
+
+    &--tip {
+      margin-top: 2rem;
+    }
+
+    &--people {
+      margin-top: 2rem;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      row-gap: 2rem;
+
+      @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+        justify-content: space-evenly;
+      }
+
+      &--item {
+        background-color: $color-dark-cyan;
+        color: $color-white;
+        font-size: 2.4rem;
+        font-weight: 400;
+        width: 47%;
+        padding: 1rem;
+        text-align: center;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-primary;
+          color: $color-dark-cyan;
+        }
+
+        @media only screen and (min-width: $bp-mobile) {
+          width: 30%;
+        }
+
+        @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background-color: $color-primary;
+  color: $color-dark-cyan;
+}

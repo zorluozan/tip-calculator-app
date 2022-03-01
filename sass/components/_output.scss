@@ -1,0 +1,49 @@
+.output {
+  background-color: $color-dark-cyan;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 2rem;
+  @include flexColumn;
+  margin-top: 2rem;
+
+  @media only screen and (min-width: $bp-mobile) {
+    width: 50%;
+  }
+
+  @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+    width: 100%;
+  }
+
+  &__amount {
+    @include flexRow;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  &__total {
+    @include flexRow;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    @media only screen and (min-width: $bp-mobile) {
+      margin-bottom: auto;
+    }
+  }
+}
+
+.reset {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $color-primary;
+  color: $color-dark-cyan;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 3rem;
+  opacity: 0.2;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-light-grayish-cyan-1;
+    opacity: 0.9;
+  }
+}

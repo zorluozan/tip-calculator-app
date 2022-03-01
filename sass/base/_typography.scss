@@ -1,0 +1,68 @@
+body {
+  font-family: "Space Mono", monospace;
+}
+
+.label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8;
+  color: $color-dark-grayish-cyan-1;
+  margin-bottom: 1rem;
+
+  @media only screen and (min-width: $bp-mobile) {
+    margin-bottom: 1rem;
+  }
+}
+
+.people__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error {
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.hidden {
+  display: none;
+}
+// OUTPUT
+.title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $color-white;
+}
+
+.small {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $color-dark-grayish-cyan-1;
+}
+
+.dollar {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $color-primary;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $color-primary;
+
+  @media only screen and (min-width: $bp-mobile) {
+    font-size: 3rem;
+  }
+}
+
+.total {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $color-primary;
+
+  @media only screen and (min-width: $bp-mobile) {
+    font-size: 3rem;
+  }
+}

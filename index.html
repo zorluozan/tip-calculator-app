@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <main class="main">
+    <img src="images/logo.svg" alt="A Logo that is at the beginning of the page" class="main__logo">
+
+    <div class="main__content">
+      <div class="main__content--form">
+
+        <div class="main__content--bill">
+          <p class="label">Bill</p>
+          <input type="number" id="bill" class="input bill" placeholder="0" min="0">
+        </div>
+
+        <div class="main__content--tip">
+          <p class="label">Select Tip <span>%</span></p>
+          <div class="main__content__list">
+            <button class="main__content__list--item" value="5">5%</button>
+            <button class="main__content__list--item" value="10">10%</button>
+            <button class="main__content__list--item" value="15">15%</button>
+            <button class="main__content__list--item" value="25">25%</button>
+            <button class="main__content__list--item" value="50">50%</button>
+            <input type="text" name="custom" placeholder="Custom" class="custom__input">
+          </div>
+        </div>
+
+        <div class="main__content--people">
+          <div class="people__title">
+            <p class="label">Number of people</p>
+            <p class="error hidden">Can't be zero</p>
+          </div>
+          <input type="number" name="people" id="people" class="input input-2 people" placeholder="0" min="0">
+        </div>
+
+      </div>
+
+      <div class="output">
+
+        <div class="output__amount">
+          <div>
+            <p class="title">Tip Amount</p>
+            <small class="small">/ person</small>
+          </div>
+          <div>
+            <p class="price">$0.00</p>
+          </div>
+        </div>
+
+        <div class="output__total">
+          <div>
+            <p class="title">Total</p>
+            <small class="small">/ person</small>
+          </div>
+          <div>
+            <p class="total">$0.00</p>
+          </div>
+        </div>
+
+        <button class="reset">Reset</button>
+      </div>
+
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
